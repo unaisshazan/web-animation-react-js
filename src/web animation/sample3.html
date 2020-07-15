@@ -9,19 +9,19 @@
 #box{
    height: 300px;
    width: 300px;
-    background-color: darkviolet;
+    background-color: white;
 }
 </style>
 
 </head>
 <body>
-    <div id="box"> </div>
-    
+    <div id="box">   <center> <h1> warning</h1></center> </div>
+
     <script> 
     var  elem = document.querySelector('#box');
     elem.animate([
     { transform: 'scale(.5)',background:'white'} ,
-    { transform: 'scale(1)', background:'blue'},
+    { transform: 'scale(1)', background:'red'},
     { transform: 'scale(0.2)',background:'white'}   
 
     ],{
