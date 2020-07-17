@@ -1,10 +1,12 @@
 import React,{useRef,useEffect} from 'react';
-import useWebAnimations,{bounce} from "@wellyshen/use-web-animations";
+import useWebAnimations,{bounce,rubberBand} from "@wellyshen/use-web-animations";
 import './App.css';
 
 function App() {
 
-  const { ref, playState,getAnimation } = useWebAnimations({...bounce});
+  const { ref, playState,getAnimation } = useWebAnimations({...rubberBand
+  }
+  );
   //   keyframes: [
   //     {transform:"translate(0,0)"},
   //     {transform:"translate(600px,0)"},
@@ -36,6 +38,7 @@ function App() {
     <button onClick={()=>getAnimation().pause()} >Stop</button><br/>
     <button onClick={()=>getAnimation().play()} >Start</button><br/>
     </div>
+    
   );
 }
 
