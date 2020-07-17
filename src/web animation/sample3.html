@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style> 
+
+#box{
+   height: 300px;
+   width: 300px;
+    background-color: white;
+}
+div{
+    color:white
+}
+</style>
+
+</head>
+<body>
+    <div id="box">   <center> <h1> warning</h1></center> </div>
+
+    <script> 
+    var  elem = document.querySelector('#box');
+    elem.animate([
+    { transform: 'scale(.5)',background:'white'} ,
+    { transform: 'scale(1)', background:'red'},
+    { transform: 'scale(0.2)',background:'white'}   
+
+    ],{
+
+duration:4000,
+iterations:Infinity,
+
+    })
+    </Script>
+</body>
+</html>
