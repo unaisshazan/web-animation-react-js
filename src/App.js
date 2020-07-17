@@ -33,10 +33,11 @@ function App() {
   // });
   return (
     <div >
-    <div ref={ref} className="target"></div>
-    <h1>current animation state{playState}</h1> <br/>
+  <center>  <div ref={ref} className="target"></div>
+    <h1>Current Animation State:{playState}</h1> <br/>
     <button onClick={()=>getAnimation().pause()} >Stop</button><br/>
     <button onClick={()=>getAnimation().play()} >Start</button><br/>
+    </center>
     </div>
     
   );
