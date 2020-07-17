@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
 
-  const { ref, playState } = useWebAnimations({
+  const { ref, playState,getAnimation } = useWebAnimations({
     keyframes: [
       {transform:"translate(0,0)"},
       {transform:"translate(600px,0)"},
@@ -12,7 +12,7 @@ function App() {
 
     ],
     timing: {
-     delay: 500, // Start with a 500ms delay
+    // delay: 500, // Start with a 500ms delay
       duration: 1000, // Run for 1000ms
       iterations: Infinity, // Repeat once
       direction: "alternate", // Run the animation forwards and then backwards
@@ -31,7 +31,10 @@ function App() {
   });
   return (
     <div >
-    <div ref={ref} className="target">Hello World</div>
+    <div ref={ref} className="target"></div>
+    <h1>current animation state{playState}</h1> <br/>
+    <button onClick={()=>getAnimation().pause()} >Stop</button><br/>
+    <button onClick={()=>getAnimation().play()} >Start</button><br/>
     </div>
   );
 }
