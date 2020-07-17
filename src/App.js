@@ -9,7 +9,7 @@ function App() {
   }, [])
   return (
     <div >
-    <input ref={element} type="text"></input>
+    <div ref={element} className="target">Hello World</div>
     </div>
   );
 }
