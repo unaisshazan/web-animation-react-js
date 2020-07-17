@@ -1,5 +1,5 @@
-import React,{useRef,useEffect} from 'react';
-import useWebAnimations,{bounce,rubberBand} from "@wellyshen/use-web-animations";
+import React from 'react';
+import useWebAnimations,{rubberBand} from "@wellyshen/use-web-animations";
 import './App.css';
 
 function App() {
